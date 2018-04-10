@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="coupon-box">
+      <view class='name'>{{cObj.cName}}</view>
+      <view>
+        <view> <text class='price'>¥{{cObj.price}}</text>
+       (优惠 ¥{{cObj.oriPrice - cObj.price}})
+        </view>
+      </view>
+      <view class='line'>
+        <view class='text'>发布 {{cObj.publishDate}}</view>
+        <view class='text'>浏览 {{cObj.cViews}} 次  </view>
+        <view class='text'>点赞 {{cObj.cLikes}} 次</view>
+      </view>
+      <view><text class='grey'>使用条件:</text> {{cObj.condition}}
+      </view>
+      <view><text class='grey'>有效日期:</text> {{cObj.endDate}}
+      </view>
+    </view>
+    <view class="box">
+      <view class='publisher'>
+      发布者：
+      <text class='link' bindtap="toPersonal">{{cObj.publisher}}</text></view>
+      <view bindtap="showContact" wx-if="{{hasUserInfo}}">查看代金券截图和用户联系方式</view>
+      <view>
+        <view> 微信：{{cObj.weixin}}</view>
+        <image></image>
+      </view>
+    </view>
+</view>

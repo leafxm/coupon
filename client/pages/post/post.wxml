@@ -1,0 +1,65 @@
+<!--logs.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+  <view class="section">
+     <view class='type'>代金券名称：</view>
+     <view class='input'>
+     <input name='shopName' placeholder="店名+价格" placeholder-style="color: #ccc;font-size: 16px;"/>
+      <icon type="clear" color="#dedede" size="15" class="clear" bindtap="clear"></icon>
+      </view>
+  </view>
+   <view class="section">
+     <picker  value="{{type}}" range="{{typeArray}}">
+    <view class="picker">
+      代金券类别：{{array[index]}}
+    </view>
+  </picker>
+  </view>
+    <view class="section">
+      <view class='type'>优惠券类型：</view>
+      <view class='input'>
+     <input placeholder="如：满100-20" name="couponType" placeholder-style="color: #ccc;font-size: 16px;"/>
+        <icon type="clear" color="#dedede" size="15" class="clear" bindtap="clear"></icon>
+        </view>
+  </view>
+  <view class="section">
+      <view class='type'>有效时间：</view>
+      <view class='input'>
+      <picker  class="picker" mode="date" name="startDate" value="{{startDate}}" start="{{now}}" end="2030-01-01" bindchange="bindDateChange" data-type='startDate'>
+        <view class="picker">{{startDate}}</view>
+      </picker>
+    </view>
+    </view>
+    <view class="section">
+      <view class='type'>使用条件：</view>
+      <view class='input'>
+     <input type="text"  name="condition" placeholder="" placeholder-style="color: #ccc;font-size: 16px;"/>
+        </view>
+  </view>
+  <view class="section">
+      <view class='type'>微信号：</view>
+      <view class='input'>
+     <input type="number"  name="contact" placeholder="为方便联系请填写您的微信号" placeholder-style="color: #ccc;font-size: 16px;"/>
+        </view>
+  </view>
+  <view class="section">
+      <view class='type'>原价格(元)：</view>
+      <view class='input'>
+     <input type="number"  name="orPrice" placeholder-style="color: #ccc;font-size: 16px;"/>
+        </view>
+  </view>
+   <view class="section">
+      <view class='type'>售卖价格(元)：</view>
+      <view class='input'>
+     <input type="number"  name="price" placeholder-style="color: #ccc;font-size: 16px;"/>
+        </view>
+  </view>
+  <view class="section s-i">
+      <view>代金券截图：</view>
+      <add-img></add-img>
+  </view>
+  <view class="btn-area">
+    <button class="btn" formType="submit">发布</button>
+  </view>
+</form>
+</view>

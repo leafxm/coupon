@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+   <view class="header">
+     <location-box class="mod"></location-box>
+    <search-box class="mod"></search-box>
+    </view>
+    <view class="coupon-box">
+     <type-box></type-box>
+  <block wx:for="{{coupons}}" wx:for-item="coupon" wx:for-index="index" wx:key="index">
+      <coupon-box c-obj="{{coupon}}"></coupon-box>
+ </block>
+</view>
+    <view class='post-btn' bindtap="goPost"> +
+    </view>
+</view>

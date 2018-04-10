@@ -1,0 +1,11 @@
+<!--
+   搜索框
+-->
+ <view class="type-mod">
+        <view class='type-box' wx:for="{{typeArray}}" wx:for-item="type">
+        <view class='type-con'>
+        <image class='type-icon'src="../../resources/{{typeObj[type]}}.png"></image>
+        </view>
+          {{type}}
+        </view>
+  </view>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "add-img": "../../components/addImg/index"
+  }
+}

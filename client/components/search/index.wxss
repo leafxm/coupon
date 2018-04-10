@@ -1,0 +1,23 @@
+.input-mod {
+  padding-left: 18rpx;
+  vertical-align: middle;
+  font-size: 32rpx;
+}
+.search-icon {
+  display: inline-block;
+  width: 50rpx;
+  height:50rpx;
+  margin: -30rpx 8rpx auto;
+}
+.search-input {
+  display:inline-block;
+  overflow: auto;
+}
+.clear{
+  display:none;
+ vertical-align:20%;
+}
+
+.clear.show {
+  display:inline-block;
+}

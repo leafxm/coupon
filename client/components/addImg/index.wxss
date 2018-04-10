@@ -1,0 +1,8 @@
+.add {
+  width: 200rpx;
+  line-height:200rpx;
+  border: 1px solid #000;
+  font-size: 100rpx;
+  text-align: center;
+  margin-top:20rpx;
+}

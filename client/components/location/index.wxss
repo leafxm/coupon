@@ -1,0 +1,43 @@
+.city-mod{
+  color: #999;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  padding-right: 30rpx;
+}
+.cityname {
+  display:inline-block;
+}
+.down-icon {
+  display: inline-block;
+  width: 24rpx;
+  height: 24rpx;
+  margin-left: 10rpx;
+}
+.city-choose {
+  position: absolute;
+  top: 0;
+  left:0;
+  background: #fff;
+  height: 100vh;
+  width: 100%;
+  z-index:100;
+ padding: 20rpx;
+}
+
+.province-con {
+  width: 250rpx;
+  float: left;
+  height: 95vh;
+}
+.city-con {
+  width: calc(100% - 250rpx);
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  float:left;
+  height: 95vh;
+  border-left: 1px solid #f2f2f2;
+}
+
+.active {
+  color: #f05837;
+}

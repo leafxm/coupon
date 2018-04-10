@@ -1,0 +1,39 @@
+/**index.wxss**/
+.coupon-box, .box{
+  width: 100%;
+  padding: 20rpx 40rpx;
+  margin: 4px auto;
+  background: #fff;
+   color:#999;
+     font-size:28rpx;
+     line-height: 2;
+}
+.name {
+  font-size: 38rpx;
+   color:#2a2a2a;
+}
+.line {
+ font-size:24rpx;
+  overflow: hidden;
+}
+.price {
+  color:#f05837;
+  float:left;
+  font-size:30rpx;
+  margin-right: 36rpx;
+  line-height:1.75;
+
+}
+.text {
+  display:inline-block;
+}
+.line .text {
+  margin-right: 16rpx;
+}
+.grey {
+  color: #666;
+
+}
+.link{
+  color: blue;
+}

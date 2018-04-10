@@ -1,0 +1,13 @@
+<!--
+   搜索框
+-->
+ <view class="coupon-mod" bindtap="toDetails">
+        <view class='name'>{{cObj.cName}}</view>
+         <view class='text'>
+         <view class='link' catchtap="toPersonal">{{cObj.publisher}}</view> {{cObj.publishDate}} 发布</view>
+         <view class='text'>最近一周浏览 {{cObj.cViews}} 次  </view>
+    <view class='line'>
+      <view class='price'>¥ {{cObj.price}} 元</view>
+      <view class='likes'>{{cObj.cLikes}} 次</view>
+    </view>
+  </view>

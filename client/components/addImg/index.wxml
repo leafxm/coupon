@@ -1,0 +1,7 @@
+<!--
+   搜索框
+-->
+ <view class="img-mod">
+        <view class='add' bindtap="addImg">+
+        </view>
+  </view>

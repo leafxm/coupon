@@ -1,0 +1,56 @@
+/* pages/post/post.wxss */
+form {
+  position: relative;
+  box-sizing: border-box;
+   min-height: 100vh;
+   padding-top: 20rpx;
+   width:100%;
+   color: #2a2a2a;
+
+}
+.section {
+  width: 100%;
+  padding: 30rpx 20rpx;
+  display: flex;
+  border-bottom: 1px solid #fafafa;
+  box-sizing:border-box;
+} 
+.type {
+  flex:2;
+}
+.input {
+  flex: 3;
+  position: relative;
+}
+.clear {
+ position: absolute;
+ top: calc( 50% - 5px);
+  right: 10rpx;
+}
+.btn-area {
+  line-height:  100rpx;
+  width: 100%;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.btn {
+  background-color:#f05837;
+  color: #fff;
+  border-radius:0;
+}
+
+.tips {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 13px;
+  background: #f05837;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.s-i{
+  display: block;
+}

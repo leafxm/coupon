@@ -1,0 +1,38 @@
+.type-mod {
+  width: 630rpx;
+  margin:0 auto;
+  padding-top: 10rpx;
+}
+.type-box {
+  display:inline-block;
+   text-align: center;
+   font-size: 24rpx;
+}
+.type-con {
+  width:110rpx;
+  height:110rpx;
+   border-radius:50%;
+  line-height:150rpx;
+  text-align:center;
+  vertical-align: middle;
+  margin-bottom: 6rpx;
+}
+.type-box:first-child  .type-con{
+  background-color: #e03636;
+}
+.type-box:nth-child(2n)  .type-con {
+  background-color: #edd0be;
+}
+.type-box:nth-child(3) .type-con {
+  background-color: #ff534d;
+}
+.type-box:nth-child(5)  .type-con{
+  background-color: #25c6fc;
+}
+.type-icon {
+  height: 50%;
+  width: 50%;
+}
+.type-box + .type-box{
+  margin-left:20rpx;
+}
