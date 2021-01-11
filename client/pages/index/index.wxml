@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
    <view class="header">
-     <location-box class="mod"></location-box>
+   <image class = 'avatar' src = "{{userInfo.avatarUrl}}" bindtap='toPersonal'></image>
     <search-box class="mod"></search-box>
     </view>
     <view class="coupon-box">

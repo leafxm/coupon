@@ -2,7 +2,6 @@
   "usingComponents": {
     "coupon-box":         "../../components/coupon/index",
       "search-box": "../../components/search/index",
-        "location-box": "../../components/location/index",
         "type-box": "../../components/type/index"
   }
 }

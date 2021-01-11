@@ -2,7 +2,9 @@
 <view class="container">
   <view class= 'header'>{{userName}}的代金券列表</view>
     <view class="coupon-box">
-  <block wx:for="{{coupons}}" wx:for-item="coupon" wx:for-index="index" wx:key="index">
+  <block wx:for="{{coupons}}" wx:for-item="coupon" wx:for-index="index" wx:key="index" bindtouchstart="touchS"
+bindtouchmove="touchM"
+bindtouchend="touchE">
       <coupon-box c-obj="{{coupon}}"></coupon-box>
   </block>
 
